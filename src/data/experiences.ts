@@ -22,19 +22,8 @@ export type ExperienceContent = {
   nearby: Activity[];
 };
 
-export const experiencesData: { en: ExperienceContent; es: ExperienceContent } = {
-  es: {
-    section: "Sobre NIDU",
-    title: "Experiencias curadas por NIDU con información pública de operadores de la región.",
-    paragraphs: [
-      "NIDU actúa como curador de experiencias: algunas pueden ser propias y otras operadas por aliados locales.",
-      "A continuación verás actividades en Hacienda Venecia y actividades cercanas, con datos públicos visibles como duración, horarios, precio y contacto de reserva.",
-      "Para reservar, puedes usar el contacto directo del operador aliado y NIDU puede ayudarte con la coordinación.",
-    ],
-    haciendaTitle: "Actividades en la Hacienda",
-    nearbyTitle: "Actividades cercanas",
-    reserveLabel: "Reservar por WhatsApp",
-    hacienda: [
+const allActivities: { hacienda: Activity[]; nearby: Activity[] } = {
+  hacienda: [
       {
         title: "Tour de Café",
         url: "https://haciendavenecia.com/es/tour-de-cafe/",
@@ -143,8 +132,8 @@ export const experiencesData: { en: ExperienceContent; es: ExperienceContent } =
         contact: "+57 320 636 5719",
         notes: "Recomendado hidratación, ropa cómoda y app Avenza Maps",
       },
-    ],
-    nearby: [
+  ],
+  nearby: [
       {
         title: "Parque Nacional Los Nevados - Nevado del Ruiz",
         url: "https://haciendavenecia.com/es/parque-nacional-los-nevados-nevado-del-ruiz/",
@@ -277,7 +266,23 @@ export const experiencesData: { en: ExperienceContent; es: ExperienceContent } =
         contact: "+57 320 636 5719",
         notes: "Posibilidad de continuar con lluvia salvo tormenta eléctrica",
       },
+  ],
+};
+
+export const experiencesData: { en: ExperienceContent; es: ExperienceContent } = {
+  es: {
+    section: "Sobre NIDU",
+    title: "Experiencias curadas por NIDU con información pública de operadores de la región.",
+    paragraphs: [
+      "NIDU actúa como curador de experiencias: algunas pueden ser propias y otras operadas por aliados locales.",
+      "A continuación verás actividades en Hacienda Venecia y actividades cercanas, con datos públicos visibles como duración, horarios, precio y contacto de reserva.",
+      "Para reservar, puedes usar el contacto directo del operador aliado y NIDU puede ayudarte con la coordinación.",
     ],
+    haciendaTitle: "Actividades en la Hacienda",
+    nearbyTitle: "Actividades cercanas",
+    reserveLabel: "Reservar por WhatsApp",
+    hacienda: allActivities.hacienda,
+    nearby: allActivities.nearby,
   },
   en: {
     section: "About NIDU",
@@ -290,7 +295,7 @@ export const experiencesData: { en: ExperienceContent; es: ExperienceContent } =
     haciendaTitle: "Activities at the Hacienda",
     nearbyTitle: "Nearby activities",
     reserveLabel: "Book via WhatsApp",
-    hacienda: [],
-    nearby: [],
+    hacienda: allActivities.hacienda,
+    nearby: allActivities.nearby,
   },
 };
