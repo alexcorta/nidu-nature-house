@@ -4,6 +4,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../sections/Hero";
 import Experience from "../sections/Experience";
+import Gallery from "../sections/Gallery";
 import Rooms from "../sections/Rooms";
 
 export default function HomePage() {
@@ -25,6 +26,7 @@ export default function HomePage() {
       <Navbar language={language} onLanguageChange={handleLanguageChange} />
       <Hero language={language} />
       <Experience language={language} />
+      <Gallery language={language} />
       <Rooms language={language} />
     </main>
   );

@@ -48,7 +48,7 @@ export default function Navbar({ language, onLanguageChange }: NavbarProps) {
             <a href="#">{t.home}</a>
             <a href="#rooms">{t.rooms}</a>
             <a href="#experiences">{t.experiences}</a>
-            <a href="#">{t.gallery}</a>
+            <a href="#gallery">{t.gallery}</a>
             <a href="#">{t.reservations}</a>
           </nav>
 
@@ -104,7 +104,7 @@ export default function Navbar({ language, onLanguageChange }: NavbarProps) {
               <a href="#" onClick={() => setMenuOpen(false)}>{t.home}</a>
               <a href="#rooms" onClick={() => setMenuOpen(false)}>{t.rooms}</a>
               <a href="#experiences" onClick={() => setMenuOpen(false)}>{t.experiences}</a>
-              <a href="#" onClick={() => setMenuOpen(false)}>{t.gallery}</a>
+              <a href="#gallery" onClick={() => setMenuOpen(false)}>{t.gallery}</a>
               <a href="#" onClick={() => setMenuOpen(false)}>{t.reservations}</a>
               <button className="mt-2 w-fit rounded-full border border-black/20 px-5 py-2 text-sm text-black transition hover:bg-black/5">
                 {t.bookNow}
