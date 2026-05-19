@@ -25,7 +25,7 @@ export const roomsByLanguage: { en: RoomsContent; es: RoomsContent } = {
       {
         name: "Cardenal",
         description: "A bright room open to the landscape, ideal for watching sunset colors across the mountains with coffee and silence. A refuge designed to disconnect from the daily pace.",
-        image: "/images/cardenal.jpg",
+        image: "/images/cardenal.png",
       },
       {
         name: "Azulejo",
@@ -47,7 +47,7 @@ export const roomsByLanguage: { en: RoomsContent; es: RoomsContent } = {
       {
         name: "Cardenal",
         description: "Habitación luminosa y abierta hacia el paisaje, ideal para contemplar los colores del atardecer entre montañas, café y silencio. Un refugio pensado para desconectarse del ritmo cotidiano.",
-        image: "/images/cardenal.jpg",
+        image: "/images/cardenal.png",
       },
       {
         name: "Azulejo",

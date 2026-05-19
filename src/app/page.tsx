@@ -22,7 +22,7 @@ export default function HomePage() {
   };
 
   return (
-    <main style={{ backgroundColor: "#161514" }}>
+    <main className="w-full" style={{ backgroundColor: "#161514" }}>
       <Navbar language={language} onLanguageChange={handleLanguageChange} />
       <Hero language={language} />
       <Experience language={language} />

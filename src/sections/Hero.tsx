@@ -8,11 +8,13 @@ export default function Hero({ language }: HeroProps) {
   const t = heroByLanguage[language];
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
+    <section className="relative flex items-center justify-center overflow-hidden" style={{ width: "100vw", height: "100vh" }}>
       <div
-        className="absolute inset-0 bg-cover bg-center"
         style={{
+          position: "absolute", top: 0, left: 0, width: "100%", height: "100%",
           backgroundImage: "url('/images/hero.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       />
 
